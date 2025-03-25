@@ -1,0 +1,31 @@
+@import "tailwindcss";
+/* @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  top: 0;
+  overflow: auto;
+}
+
+#root {
+  height: 100vh;
+  min-height: 100vh;
+  background-color: #e0ddd1;
+  overflow-x: hidden;
+}
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
