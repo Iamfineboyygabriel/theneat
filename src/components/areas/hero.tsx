@@ -6,10 +6,11 @@ const Hero = () => {
       <div className="container max-w-[80%] mx-auto">
         <div className="flex text-center items-center flex-col gap-6">
           <Typography className="text-white flex gap-2 font-medium ">
-            Home <span>/</span> <span className="text-[#D7D3C4]">About US</span>
+            Home <span>/</span>{" "}
+            <span className="text-[#D7D3C4]">Areas Covered</span>
           </Typography>
           <Typography className="font-playfair text-white text-5xl font-semibold">
-            About Us
+            Areas Covered
           </Typography>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { ContactUs, QuickLinks, Services } from "../utils/mockData";
 const Footer = () => {
   return (
     <main>
-      <div className="pt-16 container max-w-[85%] mx-auto flex justify-between">
+      <div className="pt-16 container max-w-[80%] mx-auto flex justify-between">
         <div>
           <img src={logo} alt="logo" />
           <Typography className="max-w-sm font-normal mt-6 text-[#5C6C72]">
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="text-[#D7D3C4] mt-3" />
-      <div className="py-8 font-medium text-[#5C6C72] flex justify-between container max-w-[85%] mx-auto ">
+      <div className="py-8 font-medium text-[#5C6C72] flex justify-between container max-w-[80%] mx-auto ">
         <Typography> © {new Date().getFullYear()} TheNeatHQ</Typography>
         <div className="flex gap-9">
           <Typography>Terms & Conditions</Typography>

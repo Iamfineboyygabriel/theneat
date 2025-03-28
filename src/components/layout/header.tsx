@@ -9,7 +9,7 @@ import {
 const Header = () => {
   return (
     <div className="bg-[#7A8F8C] shadow-sm">
-      <div className="container max-w-[85%] mx-auto">
+      <div className="container max-w-[80%] mx-auto">
         <div className="flex justify-between items-center h-20">
           <div className="flex gap-4">
             <InstagramIcon />

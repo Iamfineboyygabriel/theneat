@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
   return (
     <>
       <main className="bg-[#7A8F8C]">
-        <div className="container max-w-[85%] mx-auto">
+        <div className="container max-w-[80%] mx-auto">
           <div className="flex text-center pt-20 pb-65 items-center flex-col gap-6">
             <Typography className="text-white font-medium ">
               Welcome to The Neat HQ.
@@ -23,16 +23,18 @@ const WhyChooseUs = () => {
           </div>
         </div>
       </main>
-      <section className="flex gap-6 container max-w-[85%] mx-auto -mt-60">
-        {WhyChooseUsData.map((result, index) => (
-          <WhyCard
-            key={index}
-            title={result.label}
-            titleB={result.labelB}
-            description={result.detail}
-            logo={result.logo}
-          />
-        ))}
+      <section className="container mx-auto max-w-[80%] -mt-60 w-full">
+        <div className="flex flex-row justify-center gap-6 w-full">
+          {WhyChooseUsData.map((result, index) => (
+            <WhyCard
+              key={index}
+              title={result.label}
+              titleB={result.labelB}
+              description={result.detail}
+              logo={result.logo}
+            />
+          ))}
+        </div>
       </section>
     </>
   );

@@ -9,7 +9,7 @@ interface CardProps {
 
 const WhyCard = ({ title, titleB, description, logo }: CardProps) => {
   return (
-    <Card className="bg-[#EEECE2] rounded-xl py-7 px-7 border-[3px] border-[#C1BBA4] w-85">
+    <Card className="bg-[#EEECE2] rounded-xl py-7 px-5 border-[3px] border-[#C1BBA4] w-full">
       {logo && <img src={logo} alt="reliable" className="w-15" />}
       <div className="mt-5">
         <Typography

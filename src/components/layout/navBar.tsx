@@ -1,7 +1,8 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import logo from "../../assets/images/Logo.png";
 import { ROUTES } from "../constants/routes";
 import { Typography } from "@material-tailwind/react";
+import { NavLink } from "react-router";
 
 const navLinks = [
   { href: ROUTES.ABOUT_US, label: "About Us" },
@@ -22,19 +23,21 @@ const NavBar = () => {
 
   return (
     <div className="bg-[#D7D3C4]">
-      <div className="container max-w-[85%] mx-auto">
+      <div className="container max-w-[80%] mx-auto">
         <div className="flex justify-between items-center h-20">
           <div className="flex gap-10 items-center">
-            <img src={logo} alt="logo" className="h-12" />
+            <NavLink to={ROUTES.HOME}>
+              <img src={logo} alt="logo" className="h-12" />
+            </NavLink>
             <div>
               <ul className="flex gap-10">
                 {navLinks.map(({ href, label }) => (
                   <li key={href}>
-                    <Link to={href} className={getLinkClassName(href)}>
+                    <NavLink to={href} className={getLinkClassName(href)}>
                       <Typography className="font-semibold text-lg">
                         {label}
                       </Typography>
-                    </Link>
+                    </NavLink>
                   </li>
                 ))}
               </ul>

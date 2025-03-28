@@ -3,7 +3,7 @@ import { Typography } from "@material-tailwind/react";
 const Register = () => {
   return (
     <main className="bg-[#7A8F8C] py-20">
-      <div className="container max-w-[85%] mx-auto">
+      <div className="container max-w-[80%] mx-auto">
         <div className="flex text-center items-center flex-col gap-6">
           <Typography className="font-playfair text-white text-5xl font-semibold">
             Register to work with us

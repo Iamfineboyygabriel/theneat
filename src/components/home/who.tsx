@@ -4,7 +4,7 @@ import { Confirm } from "../../assets/svg";
 const Who = () => {
   return (
     <main className="border border-t-[#D7D3C4] border-b-0">
-      <section className="flex pt-25 gap-30 justify-between container max-w-[85%] mx-auto">
+      <section className="flex pt-25 gap-30 justify-between container max-w-[80%] mx-auto">
         <img src={agent} alt="agent" />
         <div className="flex flex-col w-full gap-6 items-start text-start">
           <Typography className="font-semibold text-[#5C6C72] text-xl">
