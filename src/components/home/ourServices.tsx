@@ -58,7 +58,7 @@ const OurServices = () => {
     <main className="bg-[#7A8F8C] py-20">
       <div className="container max-w-[80%] mx-auto">
         <div className="flex text-center items-center flex-col gap-6">
-          <Typography className="text-white font-medium">
+          <Typography className="text-white text-xl font-medium">
             What we Offer
           </Typography>
           <Typography className="font-playfair text-[#D7D3C4] text-5xl font-semibold">
