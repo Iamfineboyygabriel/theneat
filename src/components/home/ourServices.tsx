@@ -56,23 +56,23 @@ const OurServices = () => {
 
   return (
     <main className="bg-[#7A8F8C] py-20">
-      <div className="container max-w-[80%] mx-auto">
+      <div className="container mx-auto px-4 md:px-0 md:max-w-[80%]">
         <div className="flex text-center items-center flex-col gap-6">
           <Typography className="text-white text-xl font-medium">
             What we Offer
           </Typography>
-          <Typography className="font-playfair text-[#D7D3C4] text-5xl font-semibold">
+          <Typography className="font-playfair text-[#D7D3C4] text-3xl md:text-5xl font-semibold">
             Our Services
           </Typography>
         </div>
-        <section className="grid mt-13 w-full justify-center items-center grid-cols-3 gap-6 [&>*:nth-child(n+4)]:mt-13">
+        <section className="grid mt-13 w-full justify-center items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:[&>*:nth-child(n+4)]:mt-13">
           {cleaningServices.map((service, index) => (
             <div
               key={index}
               className={
                 index === cleaningServices.length - 1 &&
                 cleaningServices.length % 3 !== 0
-                  ? "col-start-2"
+                  ? "md:col-start-2"
                   : ""
               }
             >

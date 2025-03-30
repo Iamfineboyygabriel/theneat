@@ -21,12 +21,12 @@ export function BlogCard({
   onButtonClick,
 }: BlogCardProps) {
   return (
-    <Card className="m h-full flex flex-col overflow-hidden">
+    <Card className="h-full flex flex-col overflow-hidden">
       <CardHeader
         floated={false}
         shadow={false}
         color="transparent"
-        className="m-0 rounded-none h-64"
+        className="m-0 rounded-none h-48 md:h-64"
       >
         <img
           src={image}
@@ -34,7 +34,7 @@ export function BlogCard({
           alt={imageAlt}
         />
       </CardHeader>
-      <CardBody className="p-8 bg-[#EEECE2] flex flex-col flex-grow justify-between text-center">
+      <CardBody className="p-4 md:p-8 bg-[#EEECE2] flex flex-col flex-grow justify-between text-center">
         <div className="flex flex-col">
           <Typography
             variant="h4"
@@ -51,10 +51,10 @@ export function BlogCard({
           </Typography>
         </div>
         <button
-          className="bg-[#7A8F8C] flex self-center justify-center mt-10 w-fit items-center rounded-md py-3 px-6"
+          className="bg-[#7A8F8C] flex self-center justify-center mt-6 md:mt-10 w-fit items-center rounded-md py-2 px-4 md:py-3 md:px-6"
           onClick={onButtonClick}
         >
-          <Typography className="text-[#FFFFFF] font-semibold text-lg">
+          <Typography className="text-[#FFFFFF] font-semibold text-base md:text-lg">
             Book A Call Back
           </Typography>
         </button>
