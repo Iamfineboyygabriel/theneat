@@ -34,8 +34,8 @@ const ContactUs = () => {
           </section>
         </div>
       </main>
-      <main className="flex -mt-[26%] pb-20 justify-end max-w-[80%] container mx-auto">
-        <div className="mt-12 w-2xl bg-[#F1EFE3] px-36 py-15 rounded-lg ">
+      <main className="flex -mt-[26%] pb-20  justify-end max-w-[80%] container mx-auto">
+        <div className="mt-12 w-2xl bg-[#F1EFE3] border-[2px] border-[#C1BBA4] px-36 py-15 rounded-lg ">
           <Typography className="text-center text-black text-3xl font-bold mb-6">
             Send Us A Message
           </Typography>
@@ -114,7 +114,9 @@ const ContactUs = () => {
               type="button"
               className="w-full mt-8 py-4 px-4 bg-[#7A8F8C] text-white rounded-md"
             >
-              <Typography>Send Message</Typography>
+              <Typography className="text-xl font-semibold">
+                Send Message
+              </Typography>
             </Button>
           </form>
         </div>
