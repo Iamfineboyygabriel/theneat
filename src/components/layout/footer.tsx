@@ -25,9 +25,13 @@ const Footer = () => {
               Get weekly update and join our community
             </Typography>
           </div>
-          <div>
-            <input className="bg-[#EEECE2] py-5 w-full mt-4 rounded-lg" />
+          <div className="relative mt-6">
+            <input className="bg-[#EEECE2] py-5 pl-6 pr-32 w-full rounded-lg" />
+            <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#5C6C72] text-white py-3 px-6 rounded-lg font-medium">
+              Subscribe
+            </button>
           </div>
+
           <section className="flex text-[#5C6C72] mt-6 justify-between">
             <div className="flex flex-col gap-3">
               <Typography className="font-medium text-[#7A8F8C] text-xl">
