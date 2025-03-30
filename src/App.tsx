@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import AboutUs from "./pages/aboutUs/aboutUs";
 import Services from "./pages/services/services";
 import Areas from "./pages/areasCovered/areas";
+import ContactUs from "./pages/contactUs/contactUs";
 
 function App() {
   return (
@@ -14,12 +15,20 @@ function App() {
       <div className="flex flex-col">
         <Header />
         <NavBar />
-        <main className="mt-">
+        <main>
           <Routes>
             <Route path={ROUTES.HOME} element={<Home />} />
             <Route path={ROUTES.ABOUT_US} element={<AboutUs />} />
+
+            {/* Redirect from base services to specific service */}
             <Route path={ROUTES.SERVICES} element={<Services />} />
+            <Route
+              path={`${ROUTES.SERVICES}/:serviceType`}
+              element={<Services />}
+            />
+
             <Route path={ROUTES.AREAS} element={<Areas />} />
+            <Route path={ROUTES.CONTACT_US} element={<ContactUs />} />
           </Routes>
         </main>
         <Footer />
