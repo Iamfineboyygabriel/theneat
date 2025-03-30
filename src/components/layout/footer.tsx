@@ -1,8 +1,29 @@
 import { Typography } from "@material-tailwind/react";
 import logo from "../../assets/images/Logo.png";
 import { ContactUs, QuickLinks, Services } from "../utils/mockData";
+import { Link } from "react-router";
 
 const Footer = () => {
+  const handleScroll = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "instant",
+      });
+    }, 50);
+  };
+
+  {
+    Services.map((service, index) => (
+      <div key={index}>
+        <Link to={service.to} onClick={handleScroll}>
+          <Typography className="font-normal text-lg">
+            {service.label}
+          </Typography>
+        </Link>
+      </div>
+    ));
+  }
   return (
     <main>
       <div className="pt-16 container max-w-[80%] mx-auto flex justify-between">
@@ -39,9 +60,11 @@ const Footer = () => {
               </Typography>
               {Services.map((service, index) => (
                 <div key={index}>
-                  <Typography className="font-normal text-lg">
-                    {service.label}
-                  </Typography>
+                  <Link to={service.to} onClick={handleScroll}>
+                    <Typography className="font-normal text-lg">
+                      {service.label}
+                    </Typography>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -51,9 +74,11 @@ const Footer = () => {
               </Typography>
               {QuickLinks.map((links, index) => (
                 <div key={index}>
-                  <Typography className="font-normal text-lg">
-                    {links.label}
-                  </Typography>
+                  <Link to={links.to} onClick={handleScroll}>
+                    <Typography className="font-normal text-lg">
+                      {links.label}
+                    </Typography>
+                  </Link>
                 </div>
               ))}
             </div>

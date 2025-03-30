@@ -22,22 +22,23 @@ export const Results = [
 ];
 
 export const Services = [
+  { label: "Home Holiday Cleaning", to: "/services/home-holiday-cleaning" },
   {
-    label: "End of Tenancy",
+    label: "Post Construction Cleaning",
+    to: "/services/post-construction-cleaning",
   },
-  { label: "Construction Cleaning" },
-  { label: "Commercial Cleaning" },
-  { label: "Office Cleaning" },
-  { label: "House Cleaning" },
-  { label: "Appartment Cleaning" },
-  { label: "Carpet Cleaning" },
+  { label: "Commercial Cleaning", to: "/services/commercial-cleaning" },
+  { label: "Laundry Services", to: "/services/laundry-services" },
+  { label: "Home Organisation", to: "/services/home-organisation" },
+  { label: "Appartment Cleaning", to: "/services/appartment-cleaning" },
+  { label: "Carpet Cleaning", to: "/services/carpet-cleaning" },
 ];
 
 export const QuickLinks = [
-  { label: "About Us" },
-  { label: "Login" },
-  { label: "Registration Form" },
-  { label: "Areac Covered" },
+  { label: "About Us", to: "/about-us" },
+  { label: "Login", to: "#" },
+  { label: "Registration Form", to: "#" },
+  { label: "Areac Covered", to: "/areas" },
 ];
 
 export const ContactUs = [{ label: "The Neat HQ" }];
