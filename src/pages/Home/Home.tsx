@@ -7,7 +7,7 @@ import WhyChooseUs from "../../components/home/whyChooseUs";
 
 const Home = () => {
   return (
-    <main className="flex flex-col gap-20">
+    <main className="flex flex-col gap-10 md:ap-20">
       <Hero />
       <WhyChooseUs />
       <Who />

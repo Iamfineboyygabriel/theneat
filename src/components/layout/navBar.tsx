@@ -57,7 +57,7 @@ const NavBar = () => {
 
   return (
     <div className="bg-[#D7D3C4]">
-      <div className="container max-w-full px-4 md:px-6 lg:max-w-[80%] mx-auto">
+      <div className="container max-w-full px-4 md:px-0 lg:max-w-[80%] mx-auto">
         <div className="flex justify-between items-center h-20">
           <div className="flex gap-4 md:gap-10 items-center">
             <NavLink to={ROUTES.HOME}>

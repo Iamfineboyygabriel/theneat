@@ -6,15 +6,15 @@ const WhyChooseUs = () => {
   return (
     <>
       <main className="bg-[#7A8F8C]">
-        <div className="container max-w-[80%] mx-auto">
-          <div className="flex text-center pt-20 pb-65 items-center flex-col gap-6">
+        <div className="container md:max-w-[80%] mx-auto">
+          <div className="flex text-center pt-20 pb-55 md:pb-65 items-center flex-col gap-6">
             <Typography className="text-white font-medium ">
               Welcome to The Neat HQ.
             </Typography>
-            <Typography className="font-playfair text-[#D7D3C4] text-5xl font-semibold">
+            <Typography className="font-playfair text-[#D7D3C4] md:text-5xl text-4xl font-semibold">
               Why Choose Us
             </Typography>
-            <Typography className="leading-loose text-lg text-white max-w-2xl">
+            <Typography className="leading-loose text-lg px-4 text-white md:max-w-2xl md:px-0">
               Tired of the mess? We've got you covered! neat! HQ provides fast
               reliable, and affordable cleaning services for homes and officees.
               Our professional cleaners ensure every corner shines. so you can
@@ -23,8 +23,8 @@ const WhyChooseUs = () => {
           </div>
         </div>
       </main>
-      <section className="container mx-auto max-w-[80%] -mt-60 w-full">
-        <div className="flex flex-row justify-center gap-6 w-full">
+      <section className="container px-4 md:px-0 mx-auto md:max-w-[80%] -mt-47 md:-mt-50 w-full">
+        <div className="flex flex-col md:flex-row justify-center md:gap-6 w-full">
           {WhyChooseUsData.map((result, index) => (
             <WhyCard
               key={index}

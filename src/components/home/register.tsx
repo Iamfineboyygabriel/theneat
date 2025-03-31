@@ -2,10 +2,10 @@ import { Typography } from "@material-tailwind/react";
 
 const Register = () => {
   return (
-    <main className="bg-[#7A8F8C] py-20">
+    <main className="bg-[#7A8F8C] py-14 md:py-20">
       <div className="container max-w-[80%] mx-auto">
         <div className="flex text-center items-center flex-col gap-6">
-          <Typography className="font-playfair text-white text-5xl font-semibold">
+          <Typography className="font-playfair text-white text-4xl md:text-5xl font-semibold">
             Register to work with us
           </Typography>
           <Typography className="text-white font-medium ">

@@ -79,27 +79,27 @@ const Testimonials = () => {
   };
 
   return (
-    <main className="bg-[#e0ddd1] py-20">
-      <div className="container max-w-[80%] mx-auto">
-        <div className="flex text-center items-center flex-col gap-6">
-          <Typography className="text-[#5C6C72] text-xl font-medium">
+    <main className="bg-[#e0ddd1] py-4 md:py-20">
+      <div className="container mx-auto px-4 md:max-w-[80%]">
+        <div className="flex text-center items-center flex-col gap-4 md:gap-6">
+          <Typography className="text-[#5C6C72] text-lg md:text-xl font-medium">
             Testimonials
           </Typography>
-          <Typography className="font-playfair text-[#2E3538] text-5xl font-semibold">
+          <Typography className="font-playfair text-[#2E3538] text-3xl md:text-5xl font-semibold">
             What Our Happy Customers Say
           </Typography>
         </div>
-        <section className="mt-8 relative">
+        <section className="mt-6 md:mt-8 relative">
           <div
             ref={testimonialsRef}
-            className="flex overflow-x-auto scrollbar-hide gap-6 pb-4"
+            className="flex overflow-x-auto scrollbar-hide gap-4 md:gap-6 pb-4"
             onScroll={handleScroll}
             style={{ scrollBehavior: "smooth" }}
           >
             {testimonials.map((result, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-full md:w-[calc(33.333%-16px)] min-w-[280px]"
+                className="flex-shrink-0 w-[85%] sm:w-[70%] md:w-[calc(33.333%-16px)] min-w-[280px]"
               >
                 <TestimonialCard
                   description={result.text}
@@ -110,7 +110,7 @@ const Testimonials = () => {
             ))}
           </div>
         </section>
-        <section className="flex mt-5 justify-center gap-4">
+        <section className="flex mt-4 md:mt-5 justify-center gap-4">
           <button
             onClick={() => scroll("left")}
             className={`p-2 rounded-full w-10 h-10 flex items-center justify-center transition-colors ${

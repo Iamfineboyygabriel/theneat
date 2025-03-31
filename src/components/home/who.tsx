@@ -5,7 +5,7 @@ import { Confirm } from "../../assets/svg";
 const Who = () => {
   return (
     <main className="border border-t-[#D7D3C4] border-b-0">
-      <section className="container px-4 sm:px-6 max-w-full sm:max-w-[90%] md:max-w-[85%] lg:max-w-[80%] mx-auto py-8 md:py-16 lg:py-24">
+      <section className="container md:px-0 px-4 max-w-full sm:max-w-[90%] md:max-w-[85%] lg:max-w-[80%] mx-auto py-8 md:py-16 lg:py-24">
         <div className="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 xl:gap-20 justify-between">
           <div className="flex justify-center lg:justify-start lg:max-w-[45%] order-2 lg:order-1">
             <img

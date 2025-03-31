@@ -5,7 +5,7 @@ import { Results } from "../utils/mockData";
 
 const Hero = () => {
   return (
-    <main className="container px-4 sm:px-6 mt-8 max-w-full sm:max-w-[90%] md:max-w-[85%] lg:max-w-[80%] mx-auto">
+    <main className="container md:px-0 px-4 mt-8 max-w-full sm:max-w-[90%] md:max-w-[85%] lg:max-w-[80%] mx-auto">
       <div className="flex justify-center items-center flex-grow">
         <img src={hero} alt="hero" className="max-w-full h-auto" />
       </div>
@@ -15,7 +15,7 @@ const Hero = () => {
           Effortless Cleaning, Exceptional Results
         </Typography>
 
-        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 md:space-x-6 lg:space-x-10 items-center justify-center md:justify-end">
+        <div className="flex flex-row space-x-4 md:space-x-6 lg:space-x-10 items-center justify-center md:justify-end">
           <button className="bg-[#7A8F8C] rounded-md py-2 px-4 md:py-3 md:px-6 w-fit">
             <Typography className="text-white font-medium">
               Get A Quote
