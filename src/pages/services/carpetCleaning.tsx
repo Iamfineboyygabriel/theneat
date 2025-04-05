@@ -5,11 +5,18 @@ import { Confirm } from "../../assets/svg";
 const CarpetCleaning = () => {
   return (
     <div className="service-content">
-      <Typography variant="h2" className="text-4xl font-bold mb-6">
+      <Typography
+        variant="h2"
+        className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6"
+      >
         Carpet Cleaning
       </Typography>
       <section className="mt-14 flex flex-col gap-8">
-        <img src={carpetCleaning} alt="clean carpet" />
+        <img
+          src={carpetCleaning}
+          alt="clean carpet"
+          className="w-full md:h-auto h-30"
+        />
         <Typography className="font-normal leading-normal max-w-2xl text-lg text-[#5C6C72]">
           Book your carpet cleaning today for a fresher, healthier space!
         </Typography>

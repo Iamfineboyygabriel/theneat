@@ -81,26 +81,28 @@ const Services = () => {
   return (
     <main>
       <Hero />
-      <section className="py-20">
-        <div className="max-w-[80%] container mx-auto">
-          <div className="flex bg-[#EEECE2] border-[2px] border-[#C1BBA4] p-12 rounded-xl flex-col md:flex-row gap-10">
-            <div className="w-full border-[#D7D3C4] pr-18 border-r md:w-1/3">
-              <ul className="space-y-8 px-5">
+      <section className="py-10 md:py-20">
+        <div className="container mx-auto px-4 md:max-w-[90%] lg:max-w-[80%]">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10 bg-[#EEECE2] border-[2px] border-[#C1BBA4] p-4 md:p-8 lg:p-12 rounded-xl">
+            <div className="w-full md:w-1/3 md:border-r border-[#D7D3C4] md:pr-4">
+              <ul className="flex flex-row md:flex-col overflow-x-auto md:overflow-visible space-x-4 md:space-x-0 md:space-y-6 lg:space-y-8 px-2 md:px-5 pb-4 md:pb-0">
                 {serviceLinks.map((service) => (
-                  <li key={service.id}>
+                  <li key={service.id} className="flex-shrink-0 md:flex-shrink">
                     <NavLink
                       to={`/services/${service.id}`}
                       className={({ isActive }) =>
-                        `block px-4 py-3 transition-colors ${
+                        `block px-3 py-2 md:px-4 md:py-3 w-[80%] transition-colors whitespace-nowrap md:whitespace-normal ${
                           isActive
-                            ? "bg-[#F4F3F0] text-lg rounded-xl text-[#5C6C72]"
-                            : "text-[#5C6C72] hover:text-black hover:bg-[#F4F3F0]"
+                            ? "bg-[#F4F3F0] text-base md:text-lg rounded-xl text-[#5C6C72]"
+                            : "text-[#5C6C72] hover:text-black hover:rounded-xl hover:bg-[#F4F3F0]"
                         }`
                       }
                     >
                       {({ isActive }) => (
                         <Typography
-                          className={isActive ? "font-medium" : "font-normal"}
+                          className={`text-sm md:text-base ${
+                            isActive ? "font-medium" : "font-normal"
+                          }`}
                         >
                           {service.label}
                         </Typography>
@@ -111,7 +113,7 @@ const Services = () => {
               </ul>
             </div>
 
-            <div className="w-full md:w-3/4 bg-inherit rounded-md">
+            <div className="w-full md:w-2/3 bg-inherit rounded-md">
               {renderServiceContent()}
             </div>
           </div>

@@ -1,7 +1,13 @@
 import { Button, Typography } from "@material-tailwind/react";
 import { Location, WhatsAppIcon } from "../../assets/svg";
+import { useContext } from "react";
+import { LocationContext } from "../../components/constants/locationContext";
 
 const ContactUs = () => {
+  const { selectedLocation } = useContext(LocationContext);
+
+  const address = selectedLocation?.label || "Address Here, UK";
+  const phone = selectedLocation?.phone || "+44 117 234 5678";
   return (
     <>
       <main className="bg-[#7A8F8C] py-10 md:py-20">
@@ -21,13 +27,13 @@ const ContactUs = () => {
               <div className="flex gap-2.5">
                 <Location />
                 <Typography className="text-white font-normal text-base md:text-lg">
-                  Address Here, UK
+                  {address}
                 </Typography>
               </div>
               <div className="flex gap-2.5">
                 <WhatsAppIcon />
                 <Typography className="text-white text-base md:text-lg font-normal">
-                  Address Here, UK
+                  {phone}
                 </Typography>
               </div>
             </div>

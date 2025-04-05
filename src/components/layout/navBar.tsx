@@ -138,7 +138,7 @@ const NavBar = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
             <Typography className="hidden lg:block text-[#7A8F8C] text-lg font-medium cursor-pointer hover:text-[#5C6C72]">
               Login
             </Typography>

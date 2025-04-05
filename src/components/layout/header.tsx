@@ -1,3 +1,4 @@
+import { useState, useContext } from "react";
 import { Typography } from "@material-tailwind/react";
 import {
   FacebookIcon,
@@ -5,31 +6,94 @@ import {
   TiktokIcon,
   WhatsAppIcon,
 } from "../../assets/svg";
+import { ChevronDown } from "lucide-react";
+import LocationModal from "../constants/locationModal";
+import { LocationContext } from "../constants/locationContext";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+  const { selectedLocation } = useContext(LocationContext);
+
+  const handleOpen = () => setOpen(!open);
+
   return (
-    <div className="bg-[#7A8F8C] shadow-sm">
-      <div className="container max-w-full px-4 md:px-0 md:max-w-[90%] lg:max-w-[80%] mx-auto">
-        <div className="flex justify-between items-center h-20">
-          <div className="flex gap-3 sm:gap-4">
-            <InstagramIcon />
-            <FacebookIcon />
-            <TiktokIcon />
-            <div className="flex items-center gap-2 sm:gap-3">
-              <WhatsAppIcon />
-              <Typography className="text-white text-sm md:text-base font-medium hidden xs:inline-block">
-                +244 117 234 5678
-              </Typography>
+    <>
+      <div className="bg-[#7A8F8C] shadow-sm">
+        <div className="container max-w-full px-4 md:px-0 md:max-w-[90%] lg:max-w-[80%] mx-auto">
+          <div className="hidden sm:flex justify-between items-center h-20">
+            <div className="flex gap-4">
+              <InstagramIcon />
+              <FacebookIcon />
+              <TiktokIcon />
+              <div className="flex items-center gap-3">
+                <WhatsAppIcon />
+                <Typography className="text-white text-base font-medium">
+                  {selectedLocation?.phone || "+44 117 234 5678"}
+                </Typography>
+              </div>
             </div>
+
+            <button onClick={handleOpen} className="flex items-center gap-8">
+              <Typography className="underline font-medium text-white text-base">
+                Get A Quote
+              </Typography>
+              <div className="flex items-center gap-2">
+                {selectedLocation && (
+                  <img
+                    src={selectedLocation.icon}
+                    alt={selectedLocation.label}
+                    className="w-5 h-5"
+                  />
+                )}
+                <Typography className="text-white font-normal">
+                  {selectedLocation?.label || "UK"}
+                </Typography>
+                <ChevronDown className="text-white w-4 h-4" />
+              </div>
+            </button>
           </div>
-          <div>
-            <Typography className="underline font-medium text-white text-lg md:text-base">
-              Get A Quote
-            </Typography>
+
+          <div className="sm:hidden py-4">
+            <div className="flex justify-between items-center mb-3">
+              <div className="flex gap-3">
+                <InstagramIcon />
+                <FacebookIcon />
+                <TiktokIcon />
+              </div>
+              <div className="flex items-center gap-2">
+                <WhatsAppIcon />
+                <Typography className="text-white text-sm font-medium">
+                  {selectedLocation?.phone || "+44 117 234 5678"}
+                </Typography>
+              </div>
+            </div>
+
+            <div className="flex justify-between items-center">
+              <button onClick={handleOpen} className="flex items-center">
+                <Typography className="underline font-medium text-white text-sm">
+                  Get A Quote
+                </Typography>
+              </button>
+
+              <button onClick={handleOpen} className="flex items-center gap-2">
+                {selectedLocation && (
+                  <img
+                    src={selectedLocation.icon}
+                    alt={selectedLocation.label}
+                    className="w-4 h-4"
+                  />
+                )}
+                <Typography className="text-white text-sm font-normal">
+                  {selectedLocation?.label || "UK"}
+                </Typography>
+                <ChevronDown className="text-white w-3 h-3" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <LocationModal open={open} handleOpen={handleOpen} />
+    </>
   );
 };
 

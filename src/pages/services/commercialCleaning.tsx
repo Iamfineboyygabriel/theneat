@@ -5,11 +5,18 @@ import { Confirm } from "../../assets/svg";
 const CommercialCleaning = () => {
   return (
     <div className="service-content">
-      <Typography variant="h2" className="text-4xl font-bold mb-6">
+      <Typography
+        variant="h2"
+        className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6"
+      >
         Commercial Cleaning
       </Typography>
       <section className="mt-14 flex flex-col gap-8">
-        <img src={commercialCleaning} alt="man chair" />
+        <img
+          src={commercialCleaning}
+          alt="man chair"
+          className="w-full md:h-auto h-30"
+        />
         <Typography className="font-normal leading-normal max-w-2xl text-lg text-[#5C6C72]">
           Keep your workplace spotless with Neat HQ’s Commercial Cleaning
           Service! A clean office means a healthier, more productive environment

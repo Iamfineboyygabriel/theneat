@@ -2,6 +2,8 @@ import { useState, useRef, useEffect } from "react";
 import { Typography } from "@material-tailwind/react";
 import TestimonialCard from "./testimonialsCard";
 import avatar from "../../assets/images/avatar.png";
+import james from "../../assets/images/james.png";
+import emily from "../../assets/images/emily.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Testimonials = () => {
@@ -20,22 +22,12 @@ const Testimonials = () => {
     {
       text: "Exceptional service! They arrived on time, worked efficiently, and left my office spotless. Highly recommend!",
       name: "James R.",
-      image: avatar,
+      image: james,
     },
     {
       text: "Best cleaning service ever. Booking was easy, and the team did an amazing job. My apartment feels brand new!",
       name: "Emily T.",
-      image: avatar,
-    },
-    {
-      text: "I've tried many cleaning services, but Neat HQ is by far the best. Attention to detail is impressive!",
-      name: "Michael D.",
-      image: avatar,
-    },
-    {
-      text: "Reliable, trustworthy, and thorough. I'm so happy I found Neat HQ for my home cleaning needs.",
-      name: "Lisa K.",
-      image: avatar,
+      image: emily,
     },
   ];
 

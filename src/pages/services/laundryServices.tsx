@@ -5,11 +5,18 @@ import { Confirm } from "../../assets/svg";
 const LaundryCleaning = () => {
   return (
     <div className="service-content">
-      <Typography variant="h2" className="text-4xl font-bold mb-6">
+      <Typography
+        variant="h2"
+        className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6"
+      >
         Commercial Cleaning
       </Typography>
       <section className="mt-14 flex flex-col gap-8">
-        <img src={laundryCleaning} alt="laundry service" />
+        <img
+          src={laundryCleaning}
+          alt="laundry service"
+          className="w-full md:h-auto h-30"
+        />
         <Typography className="font-normal leading-normal max-w-2xl text-lg text-[#5C6C72]">
           Keep your clothes fresh, clean, and perfectly cared for with Neat HQ's
           professional laundry services. We handle everything from everyday wear
