@@ -163,7 +163,7 @@ const Location = () => {
       setSelectedLocation({
         ...selectedLocation,
         label: location.name,
-        address: `${location.name}, ${selectedLocation.label}`,
+        address: `${location.name}, ${region}, ${selectedLocation.label}`,
         mapCoordinates: location.coordinates,
       });
     }
