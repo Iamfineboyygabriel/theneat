@@ -85,7 +85,6 @@ const LocationModal: React.FC<LocationModalProps> = ({ open, handleOpen }) => {
 
   const handleContinue = () => {
     handleOpen();
-    // You could also add any additional actions here like redirecting or showing a confirmation
   };
 
   return (
@@ -101,19 +100,19 @@ const LocationModal: React.FC<LocationModalProps> = ({ open, handleOpen }) => {
           open ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        <div className="bg-[#FFFFFF] rounded-2xl shadow-xl max-w-md py-3 px-5 w-full mx-auto pointer-events-auto">
+        <div className="bg-[#FFFFFF] rounded-2xl shadow-xl w-[90%] max-w-md py-3 px-3 sm:px-5 mx-auto pointer-events-auto">
           <DialogHeader className="flex flex-col justify-center items-center">
-            <Typography className="text-center text-[#5C6C72] text-2xl font-semibold">
+            <Typography className="text-center text-[#5C6C72] text-xl sm:text-2xl font-semibold">
               Choose location
             </Typography>
             <div>
-              <Typography className="text-[#7A8F8C] font-normal mt-4 text-lg text-center">
+              <Typography className="text-[#7A8F8C] font-normal mt-2 sm:mt-4 text-base sm:text-lg text-center">
                 Choose your location to get more information about our services
               </Typography>
             </div>
           </DialogHeader>
 
-          <div className="px-6 py-4">
+          <div className="px-2 sm:px-6 py-2 sm:py-4">
             <div className="mb-4">
               <label className="block text-sm font-semibold text-[#2E3538] mb-1">
                 Country
@@ -129,9 +128,9 @@ const LocationModal: React.FC<LocationModalProps> = ({ open, handleOpen }) => {
                       <img
                         src={selectedLocation.icon}
                         alt={selectedLocation.label}
-                        className="h-7 w-7 mr-2"
+                        className="h-5 w-5 sm:h-7 sm:w-7 mr-2"
                       />
-                      <Typography className="text-[#7A8F8C] text-lg font-normal">
+                      <Typography className="text-[#7A8F8C] text-base sm:text-lg font-normal truncate">
                         {selectedLocation.label}
                       </Typography>
                     </div>
@@ -139,7 +138,7 @@ const LocationModal: React.FC<LocationModalProps> = ({ open, handleOpen }) => {
                     <span className="text-gray-400">Select</span>
                   )}
                   <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
-                    <ChevronDown />
+                    <ChevronDown className="h-4 w-4 sm:h-5 sm:w-5" />
                   </span>
                 </button>
 
@@ -156,10 +155,10 @@ const LocationModal: React.FC<LocationModalProps> = ({ open, handleOpen }) => {
                               <img
                                 src={country.icon}
                                 alt={country.label}
-                                className="h-7 w-7 mr-2"
+                                className="h-5 w-5 sm:h-7 sm:w-7 mr-2"
                               />
                               <span
-                                className={`block truncate ${
+                                className={`block truncate text-sm sm:text-base ${
                                   selectedLocation?.value === country.value
                                     ? "font-medium"
                                     : "font-normal"
@@ -180,7 +179,7 @@ const LocationModal: React.FC<LocationModalProps> = ({ open, handleOpen }) => {
               </div>
             </div>
 
-            <div className="flex justify-end">
+            <div className="flex justify-end mt-4 sm:mt-6">
               <button
                 disabled={!selectedLocation}
                 onClick={handleContinue}
@@ -188,9 +187,9 @@ const LocationModal: React.FC<LocationModalProps> = ({ open, handleOpen }) => {
                   selectedLocation
                     ? "bg-[#7A8F8C] cursor-pointer"
                     : "bg-gray-400 cursor-not-allowed"
-                } md:mt-10 w-fit items-center rounded-md py-2 mt-16 px-4 md:py-3 md:px-6 outline-none`}
+                } w-full sm:w-fit flex justify-center items-center rounded-md py-2 px-4 sm:py-3 sm:px-6 outline-none`}
               >
-                <Typography className="text-[#FFFFFF] font-medium text-base md:text-md">
+                <Typography className="text-[#FFFFFF] font-medium text-sm sm:text-base">
                   Continue
                 </Typography>
               </button>
