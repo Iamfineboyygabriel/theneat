@@ -7,7 +7,7 @@ export const Results = [
   {
     label: "Airbnb Cleaning & Service Maintenance",
     detail:
-      "We provide fast, reliable, and high quality cleaning to ensure your rental is always gues-ready.",
+      "We provide fast, reliable, and high quality cleaning to ensure your rental is always guest-ready.",
   },
   {
     label: "Commercial Cleaning",

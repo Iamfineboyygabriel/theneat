@@ -18,7 +18,7 @@ const CommercialCleaning = () => {
           className="w-full md:h-auto h-30"
         />
         <Typography className="font-normal leading-normal max-w-2xl text-lg text-[#5C6C72]">
-          A clean home is a happy home! Let Neat HQ take care of the mess so you
+          A clean home is a happy home! Let the Neat HQ take care of the mess so you
           can relax and enjoy your space. Our professional house cleaning
           services ensure every corner is spotless.
         </Typography>

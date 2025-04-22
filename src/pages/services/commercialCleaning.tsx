@@ -18,7 +18,7 @@ const CommercialCleaning = () => {
           className="w-full md:h-auto h-30"
         />
         <Typography className="font-normal leading-normal max-w-2xl text-lg text-[#5C6C72]">
-          Keep your workplace spotless with Neat HQ’s Commercial Cleaning
+          Keep your workplace spotless with the Neat HQ’s Commercial Cleaning
           Service! A clean office means a healthier, more productive environment
           for your team and clients.
         </Typography>

@@ -10,7 +10,7 @@ const Hero = () => {
           </Typography>
           <Typography className="text-white max-w-lg">
             Neat HQ provides professional cleaning services across multiple
-            locations in the UK. We're committed to deliverin top-quality
+            locations in the UK. We're committed to delivering top-quality
             cleaning wherever you need us!.
           </Typography>
         </div>

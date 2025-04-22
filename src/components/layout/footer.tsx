@@ -19,11 +19,11 @@ const Footer = () => {
         <div className="w-full md:w-auto">
           <img src={logo} alt="logo" className="max-w-[200px]" />
           <Typography className="max-w-sm font-normal mt-6 text-[#5C6C72]">
-            The Neat HQ is a professional cleaning service dedicated to making
-            homes and offices spottless with reliable, efficient and
-            eco-friendly solutions. whether you need a one-time deep clean or
-            regular maintenance, our expert team ensures a fresh and tidy space
-            every time. Clean home, happy life!
+            The Neat HQ is a professional cleaning service committed to keeping
+            homes and offices spotless with reliable, efficient, and
+            eco-friendly solutions. Whether you need a one-time deep clean or
+            regular maintenance, our expert team ensures your space stays fresh
+            and tidy — every time. A clean home is a happy life!
           </Typography>
         </div>
         <div className="w-full md:w-auto">

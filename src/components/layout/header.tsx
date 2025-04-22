@@ -33,11 +33,18 @@ const Header = () => {
               </div>
             </div>
 
-            <button onClick={handleOpen} className="flex items-center gap-8">
-              <Typography className="underline font-medium text-white text-base">
-                Get A Quote
-              </Typography>
-              <div className="flex items-center gap-2">
+            <button className="flex items-center gap-8">
+              <a
+                href="https://theneathq.launch27.com/quotes/new"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-8"
+              >
+                <Typography className="underline font-medium text-white text-base">
+                  Get A Quote
+                </Typography>
+              </a>
+              <div className="flex items-center gap-2" onClick={handleOpen}>
                 {selectedLocation && (
                   <img
                     src={selectedLocation.icon}
@@ -69,10 +76,17 @@ const Header = () => {
             </div>
 
             <div className="flex justify-between items-center">
-              <button onClick={handleOpen} className="flex items-center">
-                <Typography className="underline font-medium text-white text-sm">
+              <button className="flex items-center">
+              <a
+                href="https://theneathq.launch27.com/quotes/new"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-8"
+              >
+                <Typography className="underline font-medium text-white text-base">
                   Get A Quote
                 </Typography>
+              </a>
               </button>
 
               <button onClick={handleOpen} className="flex items-center gap-2">

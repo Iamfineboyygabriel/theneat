@@ -139,9 +139,15 @@ const NavBar = () => {
           </div>
 
           <div className="flex items-center gap-6">
-            <Typography className="hidden lg:block text-[#7A8F8C] text-lg font-medium cursor-pointer hover:text-[#5C6C72]">
-              Login
-            </Typography>
+            <a
+              href="https://theneathq.launch27.com/login"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Typography className="hidden lg:block text-[#7A8F8C] text-lg font-medium cursor-pointer hover:text-[#5C6C72]">
+                Login
+              </Typography>
+            </a>
 
             <button className="bg-[#7A8F8C] items-center rounded-md py-2 md:py-3 px-4 md:px-6 hover:bg-[#5C6C72] transition-colors">
               <Typography className="text-white text-sm md:text-base font-medium whitespace-nowrap">

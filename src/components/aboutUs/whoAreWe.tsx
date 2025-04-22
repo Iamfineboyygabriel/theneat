@@ -88,10 +88,10 @@ const WhoAreWe = () => {
             Who We Are?
           </Typography>
           <Typography className="leading-relaxed md:leading-loose text-base md:text-lg text-[#5C6C72] max-w-3xl mx-auto">
-            At Neat HQ, we are more than just a cleaning service—we are your
+            At The Neat HQ, we’re more than just a cleaning service — we’re your
             partners in creating a fresh, healthy, and stress-free space. Our
             team of dedicated, trained professionals takes pride in delivering
-            top-quality cleaning with a personal touch.
+            top-quality cleaning with a personal touch.
           </Typography>
         </div>
 

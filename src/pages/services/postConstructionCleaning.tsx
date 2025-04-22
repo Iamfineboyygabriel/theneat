@@ -18,7 +18,7 @@ const PostConstructionCleaning = () => {
           className="w-full md:h-auto h-30"
         />
         <Typography className="font-normal leading-normal max-w-2xl text-lg text-[#5C6C72]">
-          Just finished a renovation or construction project? Let Neat HQ handle
+          Just finished a renovation or construction project? Let the Neat HQ handle
           the mess! Our Post-Construction Cleaning service removes dust, debris,
           and residue, leaving your space spotless and move-in ready
         </Typography>
