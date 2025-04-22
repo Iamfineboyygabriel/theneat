@@ -18,7 +18,7 @@ const AppartmentCleaning = () => {
           className="w-full md:h-auto h-30"
         />
         <Typography className="font-normal leading-normal max-w-2xl text-lg text-[#5C6C72]">
-          Live in a fresh, clean space without the hassle! Neat HQ offers
+          Live in a fresh, clean space without the hassle! The Neat HQ offers
           professional apartment cleaning services to keep your home tidy and
           stress-free.
         </Typography>

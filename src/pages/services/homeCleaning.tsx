@@ -20,7 +20,7 @@ const HomeCleaning = () => {
           />
         </div>
         <Typography className="font-normal leading-relaxed md:leading-normal max-w-2xl text-base md:text-lg text-[#5C6C72]">
-          Moving out? Leave your old place spotless with Neat HQ's End of
+          Moving out? Leave your old place spotless with the Neat HQ's End of
           Tenancy Cleaning! We ensure every corner is deep cleaned, helping your
           secure your deposit and leave on high note.
         </Typography>

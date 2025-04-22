@@ -1,8 +1,15 @@
 import { Typography } from "@material-tailwind/react";
 import agent from "../../assets/images/agents.png";
 import { Confirm } from "../../assets/svg";
+import { useNavigate } from "react-router";
 
 const Who = () => {
+  const navigate = useNavigate();
+
+  const handleReadMore = () => {
+    navigate("./about-us");
+  };
+
   return (
     <main className="border border-t-[#D7D3C4] border-b-0">
       <section className="container md:px-0 px-4 max-w-full sm:max-w-[90%] md:max-w-[85%] lg:max-w-[80%] mx-auto py-8 md:py-16 lg:py-24">
@@ -26,9 +33,9 @@ const Who = () => {
 
             <div className="flex flex-col gap-6">
               <Typography className="text-[#5C6C72] max-w-xl text-base sm:text-lg">
-                At Neat HQ, we are more than just a cleaning service-we are your
-                partners in creating a fresh health, and stress-free space. Our
-                team of dedicated, traineed professionals takes pride in
+                At the Neat HQ, we are more than just a cleaning service-we are
+                your partners in creating a fresh health, and stress-free space.
+                Our team of dedicated, traineed professionals takes pride in
                 delivering top-quality cleaning with a personal touch.
               </Typography>
 
@@ -62,7 +69,7 @@ const Who = () => {
                   </div>
                 </div>
 
-                <button className="bg-[#7A8F8C] items-center mt-4 md:mt-6 w-fit rounded-md py-2 sm:py-3 px-4 sm:px-6">
+                <button onClick={handleReadMore} className="bg-[#7A8F8C] items-center mt-4 md:mt-6 w-fit rounded-md py-2 sm:py-3 px-4 sm:px-6 cursor-pointer">
                   <Typography className="text-white font-semibold text-base sm:text-lg">
                     Read More
                   </Typography>

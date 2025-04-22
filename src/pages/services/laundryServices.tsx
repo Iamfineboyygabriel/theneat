@@ -18,7 +18,7 @@ const LaundryCleaning = () => {
           className="w-full md:h-auto h-30"
         />
         <Typography className="font-normal leading-normal max-w-2xl text-lg text-[#5C6C72]">
-          Keep your clothes fresh, clean, and perfectly cared for with Neat HQ's
+          Keep your clothes fresh, clean, and perfectly cared for with the Neat HQ's
           professional laundry services. We handle everything from everyday wear
           to delicate fabrics, so you can enjoy clean clothes without the
           hassle.

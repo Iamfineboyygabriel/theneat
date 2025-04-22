@@ -17,9 +17,16 @@ const Hero = () => {
 
         <div className="flex flex-row space-x-4 md:space-x-6 lg:space-x-10 items-center justify-center md:justify-end">
           <button className="bg-[#7A8F8C] rounded-md py-2 px-4 md:py-3 md:px-6 w-fit">
-            <Typography className="text-white font-medium">
-              Get A Quote
-            </Typography>
+            <a
+              href="https://theneathq.launch27.com/quotes/new"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-8"
+            >
+              <Typography className="text-white font-medium">
+                Get A Quote
+              </Typography>
+            </a>
           </button>
           <button className="bg-[#EEECE2] rounded-md py-2 px-4 md:py-3 md:px-6 w-fit">
             <Typography className="text-[#7A8F8C] font-medium">
