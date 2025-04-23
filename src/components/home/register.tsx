@@ -1,6 +1,5 @@
 import { Typography } from "@material-tailwind/react";
-import { Link } from "react-router";
-import { ROUTES } from "../constants/routes";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
@@ -13,11 +12,11 @@ const Register = () => {
           <Typography className="text-white font-medium ">
             Have questions or ready to book a cleaning? We're here to help!.
           </Typography>
-          <Link to={ROUTES.CONTACT_US}>
+          <Link to="/contact-us">
             <button className="bg-[#D7D3C4] cursor-pointer items-center rounded-md py-3 px-6">
-              <Typography className="text-[#7A8F8C] font-semibold text-lg">
+              <span className="text-[#7A8F8C] font-semibold text-lg">
                 Register Here
-              </Typography>
+              </span>
             </button>
           </Link>
         </div>
