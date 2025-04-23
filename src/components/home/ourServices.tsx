@@ -14,13 +14,13 @@ const OurServices = () => {
       img: serive1,
       title: "Holiday Home Cleaning",
       description:
-        "Moving out? Leave your old place spotless with the Neat HQ's End of Tenancy Cleaning! We ensure every corner is deep cleaned, helping you secure your deposit and leave on a high note.",
+        "Moving out? Leave your old place spotless with The Neat HQ's End of Tenancy Cleaning! We ensure every corner is deep cleaned, helping you secure your deposit and leave on a high note.",
     },
     {
       img: serive2,
       title: "Post Construction Cleaning",
       description:
-        "Just finished a renovation or construction project? Let the Neat HQ handle the mess! Our Post-Construction Cleaning service removes dust, debris, and residue, leaving your space spotless and move-in ready.",
+        "Just finished a renovation or construction project? Let The Neat HQ handle the mess! Our Post-Construction Cleaning service removes dust, debris, and residue, leaving your space spotless and move-in ready.",
     },
     {
       img: serive3,
@@ -32,13 +32,13 @@ const OurServices = () => {
       img: serive4,
       title: "Laundry Services",
       description:
-        "Keep your clothes fresh, clean, and perfectly cared for with the Neat HQ's professional laundry services. We handle everything from everyday wear to delicate fabrics, so you can enjoy clean clothes without the hassle.",
+        "Keep your clothes fresh, clean, and perfectly cared for with The Neat HQ's professional laundry services. We handle everything from everyday wear to delicate fabrics, so you can enjoy clean clothes without the hassle.",
     },
     {
       img: serive5,
       title: "Home Organisation",
       description:
-        "A clean home is a happy home! Let the Neat HQ take care of the mess so you can relax and enjoy your space. Our professional house cleaning services ensure every corner is spotless.",
+        "A clean home is a happy home! Let The Neat HQ take care of the mess so you can relax and enjoy your space. Our professional house cleaning services ensure every corner is spotless.",
     },
     {
       img: serive6,
@@ -50,7 +50,7 @@ const OurServices = () => {
       img: serive7,
       title: "Carpet Cleaning",
       description:
-        "Revive your carpets with the Neat HQ's professional carpet cleaning services! We remove dirt, stains, and allergens, leaving your carpets fresh, soft, and looking like new.",
+        "Revive your carpets with The Neat HQ's professional carpet cleaning services! We remove dirt, stains, and allergens, leaving your carpets fresh, soft, and looking like new.",
     },
   ];
 

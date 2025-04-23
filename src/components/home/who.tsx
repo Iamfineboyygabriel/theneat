@@ -33,7 +33,7 @@ const Who = () => {
 
             <div className="flex flex-col gap-6">
               <Typography className="text-[#5C6C72] max-w-xl text-base sm:text-lg">
-                At the Neat HQ, we are more than just a cleaning service-we are
+                At The Neat HQ, we are more than just a cleaning service-we are
                 your partners in creating a fresh health, and stress-free space.
                 Our team of dedicated, traineed professionals takes pride in
                 delivering top-quality cleaning with a personal touch.
