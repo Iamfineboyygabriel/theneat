@@ -3,7 +3,7 @@ import { DialogHeader, Typography } from "@material-tailwind/react";
 import { ChevronDown } from "lucide-react";
 
 import uk from "../../assets/images/united-kingdom.svg";
-import dubai from "../../assets/images/dubai.svg";
+// import dubai from "../../assets/images/dubai.svg";
 import { LocationContext } from "./locationContext";
 
 interface LocationModalProps {
@@ -49,22 +49,22 @@ const LocationModal: React.FC<LocationModalProps> = ({ open, handleOpen }) => {
         lng: -1.1581,
       },
     },
-    {
-      icon: dubai,
-      label: "Dubai",
-      value: "dubai",
-      address: "Dubai Marina, Dubai, UAE",
-      phone: "+971 4 123 4567",
-      email: "theneathqdubai@gmail.com",
-      openingHours: {
-        weekdays: "Sunday - Thursday: 9 am - 7 pm",
-        weekends: "Friday - Saturday: 10 am - 5 pm",
-      },
-      mapCoordinates: {
-        lat: 25.0657,
-        lng: 55.2244,
-      },
-    },
+    // {
+    //   icon: dubai,
+    //   label: "Dubai",
+    //   value: "dubai",
+    //   address: "Dubai Marina, Dubai, UAE",
+    //   phone: "+971 4 123 4567",
+    //   email: "theneathqdubai@gmail.com",
+    //   openingHours: {
+    //     weekdays: "Sunday - Thursday: 9 am - 7 pm",
+    //     weekends: "Friday - Saturday: 10 am - 5 pm",
+    //   },
+    //   mapCoordinates: {
+    //     lat: 25.0657,
+    //     lng: 55.2244,
+    //   },
+    // },
   ];
 
   useEffect(() => {
