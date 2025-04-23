@@ -1,7 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 import logo from "../../assets/images/Logo.png";
 import { ContactUs, QuickLinks, Services } from "../utils/mockData";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const handleScroll = () => {
@@ -17,13 +17,15 @@ const Footer = () => {
     <main>
       <div className="pt-16 container px-4 md:px-0 md:max-w-[80%] mx-auto flex flex-col md:flex-row justify-between gap-8">
         <div className="w-full md:w-auto">
-          <img src={logo} alt="logo" className="max-w-[200px]" />
+          <Link to="/">
+            <img src={logo} alt="logo" className="max-w-[200px]" />
+          </Link>
           <Typography className="max-w-sm font-normal mt-6 text-[#5C6C72]">
-            The Neat HQ is a professional cleaning service committed to keeping
+            {`   The Neat HQ is a professional cleaning service committed to keeping
             homes and offices spotless with reliable, efficient, and
             eco-friendly solutions. Whether you need a one-time deep clean or
             regular maintenance, our expert team ensures your space stays fresh
-            and tidy — every time. A clean home is a happy life!
+            and tidy — every time. A clean home is a happy life!`}
           </Typography>
         </div>
         <div className="w-full md:w-auto">
