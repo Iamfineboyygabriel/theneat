@@ -1,6 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 import laundryCleaning from "../../assets/images/laundryCleaning.png";
 import { Confirm } from "../../assets/svg";
+import { Link } from "react-router-dom";
 
 const LaundryCleaning = () => {
   return (
@@ -18,9 +19,9 @@ const LaundryCleaning = () => {
           className="w-full md:h-auto h-30"
         />
         <Typography className="font-normal leading-normal max-w-2xl text-lg text-[#5C6C72]">
-          Keep your clothes fresh, clean, and perfectly cared for with the Neat HQ's
-          professional laundry services. We handle everything from everyday wear
-          to delicate fabrics, so you can enjoy clean clothes without the
+          Keep your clothes fresh, clean, and perfectly cared for with the Neat
+          HQ's professional laundry services. We handle everything from everyday
+          wear to delicate fabrics, so you can enjoy clean clothes without the
           hassle.
         </Typography>
 
@@ -91,11 +92,13 @@ const LaundryCleaning = () => {
             Book your laundry service today and enjoy fresh, clean clothes
             effortlessly!
           </Typography>
-          <button className="bg-[#7A8F8C] flex self-center justify-center mt-4 w-fit items-center rounded-md py-3 px-6">
-            <Typography className="text-[#FFFFFF] font-semibold text-lg">
-              Book A Call Back
-            </Typography>
-          </button>
+          <Link to="contact-us">
+            <button className="bg-[#7A8F8C] flex self-center justify-center mt-4 w-fit items-center rounded-md py-3 px-6">
+              <Typography className="text-[#FFFFFF] font-semibold text-lg">
+                Book A Call Back
+              </Typography>
+            </button>
+          </Link>
         </div>
       </section>
     </div>

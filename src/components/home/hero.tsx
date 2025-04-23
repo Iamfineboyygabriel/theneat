@@ -2,6 +2,7 @@ import { Typography } from "@material-tailwind/react";
 import hero from "../../assets/images/hero.png";
 import Card from "../general/card";
 import { Results } from "../utils/mockData";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -28,11 +29,13 @@ const Hero = () => {
               </Typography>
             </a>
           </button>
-          <button className="bg-[#EEECE2] rounded-md py-2 px-4 md:py-3 md:px-6 w-fit">
-            <Typography className="text-[#7A8F8C] font-medium">
-              Book A Call Back
-            </Typography>
-          </button>
+          <Link to="contact-us">
+            <button className="bg-[#EEECE2] rounded-md py-2 px-4 md:py-3 md:px-6 w-fit">
+              <Typography className="text-[#7A8F8C] font-medium">
+                Book A Call Back
+              </Typography>
+            </button>
+          </Link>
         </div>
       </section>
 

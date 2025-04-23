@@ -8,6 +8,7 @@ import phone from "../../assets/images/phone.svg";
 import email from "../../assets/images/mail.svg";
 import time from "../../assets/images/time.svg";
 import { LocationContext } from "../../components/constants/locationContext";
+import { Link } from "react-router-dom";
 
 // Using CDN version for marker icons
 const defaultIcon = new L.Icon({
@@ -139,11 +140,13 @@ const LocationDetails = () => {
                   Call or email us today to book your cleaning!
                 </Typography>
                 <div className="mt-8">
-                  <button className="bg-[#7A8F8C] cursor-pointer flex self-center justify-center w-fit items-center rounded-md py-2 px-4 md:py-3 md:px-6">
-                    <Typography className="text-[#FFFFFF] font-medium text-base md:text-lg">
-                      Book A Call Back
-                    </Typography>
-                  </button>
+                  <Link to="contact-us">
+                    <button className="bg-[#7A8F8C] cursor-pointer flex self-center justify-center w-fit items-center rounded-md py-2 px-4 md:py-3 md:px-6">
+                      <Typography className="text-[#FFFFFF] font-medium text-base md:text-lg">
+                        Book A Call Back
+                      </Typography>
+                    </button>
+                  </Link>
                 </div>
               </footer>
             </div>

@@ -1,6 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 import commercialCleaning from "../../assets/images/comercialCleaning.png";
 import { Confirm } from "../../assets/svg";
+import { Link } from "react-router-dom";
 
 const CommercialCleaning = () => {
   return (
@@ -91,11 +92,13 @@ const CommercialCleaning = () => {
             Book your commercial cleaning today for a spotless, professional
             space!
           </Typography>
-          <button className="bg-[#7A8F8C] flex self-center justify-center mt-4 w-fit items-center rounded-md py-3 px-6">
-            <Typography className="text-[#FFFFFF] font-semibold text-lg">
-              Book A Call Back
-            </Typography>
-          </button>
+          <Link to="contact-us">
+            <button className="bg-[#7A8F8C] flex self-center justify-center mt-4 w-fit items-center rounded-md py-3 px-6">
+              <Typography className="text-[#FFFFFF] font-semibold text-lg">
+                Book A Call Back
+              </Typography>
+            </button>
+          </Link>
         </div>
       </section>
     </div>

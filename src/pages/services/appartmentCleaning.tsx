@@ -1,6 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 import appartmentCleaning from "../../assets/images/appartmentCleaning.png";
 import { Confirm } from "../../assets/svg";
+import { Link } from "react-router-dom";
 
 const AppartmentCleaning = () => {
   return (
@@ -89,11 +90,14 @@ const AppartmentCleaning = () => {
           <Typography className="text-[#5C6C72] mt-2">
             Book your apartment cleaning today and enjoy a spotless home!
           </Typography>
-          <button className="bg-[#7A8F8C] flex self-center justify-center mt-4 w-fit items-center rounded-md py-3 px-6">
-            <Typography className="text-[#FFFFFF] font-semibold text-lg">
-              Book A Call Back
-            </Typography>
-          </button>
+
+          <Link to="contact-us">
+            <button className="bg-[#7A8F8C] flex self-center justify-center mt-4 w-fit items-center rounded-md py-3 px-6">
+              <Typography className="text-[#FFFFFF] font-semibold text-lg">
+                Book A Call Back
+              </Typography>
+            </button>
+          </Link>
         </div>
       </section>
     </div>

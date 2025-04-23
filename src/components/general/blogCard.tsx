@@ -4,6 +4,7 @@ import {
   CardBody,
   Typography,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 interface BlogCardProps {
   image: string;
@@ -50,14 +51,16 @@ export function BlogCard({
             {description}
           </Typography>
         </div>
-        <button
-          className="bg-[#7A8F8C] flex self-center justify-center mt-6 md:mt-10 w-fit items-center rounded-md py-2 px-4 md:py-3 md:px-6"
-          onClick={onButtonClick}
-        >
-          <Typography className="text-[#FFFFFF] font-semibold text-base md:text-lg">
-            Book A Call Back
-          </Typography>
-        </button>
+        <Link to="contact-us">
+          <button
+            className="bg-[#7A8F8C] flex self-center justify-center mt-6 md:mt-10 w-fit items-center rounded-md py-2 px-4 md:py-3 md:px-6"
+            onClick={onButtonClick}
+          >
+            <Typography className="text-[#FFFFFF] font-semibold text-base md:text-lg">
+              Book A Call Back
+            </Typography>
+          </button>
+        </Link>
       </CardBody>
     </Card>
   );

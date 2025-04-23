@@ -11,6 +11,7 @@ import {
   Collapse,
 } from "@material-tailwind/react";
 import { ChevronDown, Menu as MenuIcon, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const serviceSubLinks = [
   {
@@ -148,12 +149,13 @@ const NavBar = () => {
                 Login
               </Typography>
             </a>
-
-            <button className="bg-[#7A8F8C] items-center rounded-md py-2 md:py-3 px-4 md:px-6 hover:bg-[#5C6C72] transition-colors">
-              <Typography className="text-white text-sm md:text-base font-medium whitespace-nowrap">
-                Book A Call Back
-              </Typography>
-            </button>
+            <Link to="contact-us">
+              <button className="bg-[#7A8F8C] items-center rounded-md py-2 md:py-3 px-4 md:px-6 hover:bg-[#5C6C72] transition-colors">
+                <Typography className="text-white text-sm md:text-base font-medium whitespace-nowrap">
+                  Book A Call Back
+                </Typography>
+              </button>
+            </Link>
 
             <button
               className="lg:hidden text-[#5C6C72]"

@@ -1,6 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 import homeOrganization from "../../assets/images/homeOrganzation.png";
 import { Confirm } from "../../assets/svg";
+import { Link } from "react-router-dom";
 
 const CommercialCleaning = () => {
   return (
@@ -18,8 +19,8 @@ const CommercialCleaning = () => {
           className="w-full md:h-auto h-30"
         />
         <Typography className="font-normal leading-normal max-w-2xl text-lg text-[#5C6C72]">
-          A clean home is a happy home! Let the Neat HQ take care of the mess so you
-          can relax and enjoy your space. Our professional house cleaning
+          A clean home is a happy home! Let the Neat HQ take care of the mess so
+          you can relax and enjoy your space. Our professional house cleaning
           services ensure every corner is spotless.
         </Typography>
 
@@ -89,11 +90,13 @@ const CommercialCleaning = () => {
           <Typography className="text-[#5C6C72] mt-2">
             Book your house cleaning today and come home to freshness!
           </Typography>
-          <button className="bg-[#7A8F8C] flex self-center justify-center mt-4 w-fit items-center rounded-md py-3 px-6">
-            <Typography className="text-[#FFFFFF] font-semibold text-lg">
-              Book A Call Back
-            </Typography>
-          </button>
+          <Link to="contact-us">
+            <button className="bg-[#7A8F8C] flex self-center justify-center mt-4 w-fit items-center rounded-md py-3 px-6">
+              <Typography className="text-[#FFFFFF] font-semibold text-lg">
+                Book A Call Back
+              </Typography>
+            </button>
+          </Link>
         </div>
       </section>
     </div>

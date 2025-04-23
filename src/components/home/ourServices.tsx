@@ -26,7 +26,7 @@ const OurServices = () => {
       img: serive3,
       title: "Commercial Cleaning",
       description:
-        "Keep your workplace spotless with the Neat HQ's Commercial Cleaning Services! A clean office means a healthier, more productive environment for your team and clients.",
+        "Keep your workplace spotless with The Neat HQ's Commercial Cleaning Services! A clean office means a healthier, more productive environment for your team and clients.",
     },
     {
       img: serive4,
