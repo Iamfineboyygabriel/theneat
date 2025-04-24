@@ -22,9 +22,27 @@ const Header = () => {
         <div className="container max-w-full px-4 md:px-0 md:max-w-[90%] lg:max-w-[80%] mx-auto">
           <div className="hidden sm:flex justify-between items-center h-20">
             <div className="flex gap-4">
-              <InstagramIcon />
-              <FacebookIcon />
-              <TiktokIcon />
+              <a
+                href="https://www.tiktok.com/@theneathq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <InstagramIcon />
+              </a>
+              <a
+                href="https://www.facebook.com/theneathq/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FacebookIcon />
+              </a>
+              <a
+                href="https://www.tiktok.com/@theneathq"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TiktokIcon />
+              </a>
               <div className="flex items-center gap-3">
                 <WhatsAppIcon />
                 <Typography className="text-white text-base font-medium">
@@ -77,16 +95,16 @@ const Header = () => {
 
             <div className="flex justify-between items-center">
               <button className="flex items-center">
-              <a
-                href="https://theneathq.launch27.com/quotes/new"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-8"
-              >
-                <Typography className="underline font-medium text-white text-base">
-                  Get A Quote
-                </Typography>
-              </a>
+                <a
+                  href="https://theneathq.launch27.com/quotes/new"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-8"
+                >
+                  <Typography className="underline font-medium text-white text-base">
+                    Get A Quote
+                  </Typography>
+                </a>
               </button>
 
               <button onClick={handleOpen} className="flex items-center gap-2">
