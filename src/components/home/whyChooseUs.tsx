@@ -15,10 +15,10 @@ const WhyChooseUs = () => {
               Why Choose Us
             </Typography>
             <Typography className="leading-loose text-lg px-4 text-white md:max-w-2xl md:px-0">
-              Tired of the mess? We've got you covered! The Neat HQ provides fast,
-              reliable, and affordable cleaning services for homes and officees.
-              Our professional cleaners ensure every corner shines. so you can
-              relax and enjoy your space.
+              Tired of the mess? We've got you covered! The Neat HQ provides
+              fast, reliable, and affordable cleaning services for homes and
+              Offices. Our professional cleaners ensure every corner shines. so
+              you can relax and enjoy your space.
             </Typography>
           </div>
         </div>
