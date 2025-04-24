@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
             </Typography>
             <Typography className="leading-relaxed md:leading-loose text-base md:text-lg text-white max-w-2xl">
               Tired of the mess? We've got you covered! neat! HQ provides fast
-              reliable, and affordable cleaning services for homes and officees.
+              reliable, and affordable cleaning services for homes and Offices.
               Our professional cleaners ensure every corner shines. so you can
               relax and enjoy your space.
             </Typography>

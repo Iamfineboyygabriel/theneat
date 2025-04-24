@@ -12,7 +12,7 @@ const Register = () => {
           <Typography className="text-white font-medium ">
             Have questions or ready to book a cleaning? We're here to help!.
           </Typography>
-          <Link to="/contact-us">
+          <Link to="/contact-us" onClick={() => window.scrollTo(0, 0)}>
             <button className="bg-[#D7D3C4] cursor-pointer items-center rounded-md py-3 px-6">
               <span className="text-[#7A8F8C] font-semibold text-lg">
                 Register Here
