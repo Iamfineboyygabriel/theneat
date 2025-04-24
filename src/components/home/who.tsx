@@ -33,10 +33,10 @@ const Who = () => {
 
             <div className="flex flex-col gap-6">
               <Typography className="text-[#5C6C72] max-w-xl text-base sm:text-lg">
-                At The Neat HQ, we are more than just a cleaning service-we are
-                your partners in creating a fresh health, and stress-free space.
-                Our team of dedicated, traineed professionals takes pride in
-                delivering top-quality cleaning with a personal touch.
+                At The Neat HQ, we’re more than just a cleaning service. We are
+                your partners in creating a fresh, healthy and stress-free
+                space. Our team of dedicated, trained professionals takes pride
+                in delivering top-quality cleaning with a personal touch.
               </Typography>
 
               <div className="flex flex-col gap-6 mt-2">
@@ -69,7 +69,10 @@ const Who = () => {
                   </div>
                 </div>
 
-                <button onClick={handleReadMore} className="bg-[#7A8F8C] items-center mt-4 md:mt-6 w-fit rounded-md py-2 sm:py-3 px-4 sm:px-6 cursor-pointer">
+                <button
+                  onClick={handleReadMore}
+                  className="bg-[#7A8F8C] items-center mt-4 md:mt-6 w-fit rounded-md py-2 sm:py-3 px-4 sm:px-6 cursor-pointer"
+                >
                   <Typography className="text-white font-semibold text-base sm:text-lg">
                     Read More
                   </Typography>
