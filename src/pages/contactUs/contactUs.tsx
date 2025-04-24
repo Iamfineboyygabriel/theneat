@@ -1,9 +1,12 @@
 import { Button, Typography } from "@material-tailwind/react";
 import { Location, WhatsAppIcon } from "../../assets/svg";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { LocationContext } from "../../components/constants/locationContext";
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { selectedLocation } = useContext(LocationContext);
 
   const address = selectedLocation?.label || "Address Here, UK";

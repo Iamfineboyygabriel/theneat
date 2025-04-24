@@ -2,37 +2,21 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
-  const { pathname, key } = useLocation();
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    // Log for debugging
-    console.log("Route changed to:", pathname);
-
-    // Use multiple techniques to ensure scrolling works
-    const scrollToTopForcefully = () => {
-      // Method 1: Basic scrollTo
+    const resetScroll = () => {
       window.scrollTo(0, 0);
-
-      // Method 2: ScrollTo with options
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "instant",
-      });
-
-      // Method 3: Set scroll position directly
       document.documentElement.scrollTop = 0;
       document.body.scrollTop = 0;
     };
 
-    // Execute immediately
-    scrollToTopForcefully();
+    resetScroll();
 
-    // And also with a delay to catch any post-render changes
-    const timeoutId = setTimeout(scrollToTopForcefully, 100);
+    const timeoutId = setTimeout(resetScroll, 0);
 
     return () => clearTimeout(timeoutId);
-  }, [pathname, key]); // Include key to catch same-route navigations
+  }, [pathname]);
 
   return null;
 };
